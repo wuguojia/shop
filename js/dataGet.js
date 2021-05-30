@@ -139,7 +139,7 @@ let flowOptions={
           // 
           formatter:(params)=>{
             console.log(params)
-            return `第${params.dataIndex}名：${params.data.name}`
+            return `第${params.dataIndex+1}名：${params.data.name}`
           },
           position: 'outer',
           margin:10,
