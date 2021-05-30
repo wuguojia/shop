@@ -19,8 +19,8 @@ body {margin:0 auto;min-width:23.4375rem;max-width:120rem;}
 	line-height:4rem;
 	text-align:center;
 	font-size:2.1875rem;
-	font-weight:400;
-	color:#e9c29d;
+	font-weight:bolder;
+	color:'white';
 }
 .wrapper {
 	position:absolute;
