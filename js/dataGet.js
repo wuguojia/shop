@@ -127,8 +127,8 @@ let flowOptions={
       realtimeSort: true,
       name: '集客力',
       type: 'pie',
-      radius: [20,110],
-      center: ['50%', '60%'],
+      radius: [10,90],
+      center: ['50%', '50%'],
       roseType: 'area',
             itemStyle: {
                 borderRadius: 8
@@ -137,6 +137,10 @@ let flowOptions={
       label: {
           show: true,
           // 
+          formatter:(params)=>{
+            console.log(params)
+            return `第${params.dataIndex}名：${params.data.name}`
+          },
           position: 'outer',
           margin:10,
           valueAnimation: true
@@ -198,10 +202,10 @@ let getPowerOptions={
         opacity: 0.95,
         color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
             offset: 0,
-            color: '#f3956a'
+            color: '#00dbde'
         }, {
             offset: 1,
-            color: '#d84a1b'
+            color: '#fc00ff'
         }])
     },
       label: {
